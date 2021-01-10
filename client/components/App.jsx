@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import Loader from './shared/components/Loader/index.jsx';
+import useFetch from './shared/hooks/useFetch';
 
 export default function App() {
-  return (
-    <div>
-      <h1>Your solution goes here</h1>
-    </div>
-  );
+  const { loading, response, get } = useFetch({ base_url: 'http://localhost:3000' });
+
+  useEffect(() => {
+    get('/schedules');
+  }, []);
+
+  return <div className="app-component">{loading ? <Loader /> : 'Here'}</div>;
 }
