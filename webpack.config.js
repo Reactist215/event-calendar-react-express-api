@@ -15,12 +15,16 @@ module.exports = {
   },
   module: {
     rules: [
-      { test: /\.s?css$/, use: ['style-loader', 'css-loader', 'sass-loader'] },
+      { test: /\.s?css$/, use: ['style-loader', 'css-loader', 'sass-loader?sourceMap'] },
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
         use: ['babel-loader'],
         resolve: { extensions: ['.js', '.jsx'] },
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        loader: 'file-loader',
       },
     ],
   },

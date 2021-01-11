@@ -2,13 +2,48 @@
 * {
   box-sizing: border-box;
 }
+html,
+body {
+  margin: 0;
+}
 
 html {
   font-family: Helvetica, Arial;
   font-size: 16px;
-  color: #2f2f2f;
+  color: white;
+}
+
+#root {
+  padding: 2rem;
+  height: 100vh;
+  background-image: url('/client/assets/image/bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .app-component {
-  padding: 1rem;
+  box-shadow: 1px 1px 10px -2px black;
+  padding: 2rem 1rem;
+  background-color: #000000e6;
+  border-radius: 0.4rem;
+  h1 {
+    margin: 0;
+    text-align: center;
+  }
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #bbb7b7;
+  border-radius: 16px;
 }

@@ -7,7 +7,7 @@
 export const genTimeArr = (format = '24hr') => {
   let timeArr = [];
 
-  for (let i = 0; i < 25; i++) {
+  for (let i = 0; i < 24; i++) {
     let tItem = '';
     if (format === '24hr') {
       if (i < 10) {

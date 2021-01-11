@@ -10,7 +10,7 @@ const DividerCol = () => {
     return genTimeArr();
   });
   return (
-    <div className="cell divider-cell">
+    <div className="col divider-col">
       {timeArr.map((time) => (
         <DividerCell key={time} cellHeight={ctxVal.cellHeight} />
       ))}

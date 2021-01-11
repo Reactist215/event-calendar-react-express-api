@@ -5,6 +5,11 @@
   margin-left: -1px;
   margin-top: 1px;
   outline: none;
-  color: white;
+  color: black;
   font-size: 0.7rem;
+  font-weight: bold;
+  &:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 3px gray;
+  }
 }

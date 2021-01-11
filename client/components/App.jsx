@@ -18,6 +18,7 @@ export default function App() {
   return (
     <div className="app-component">
       <AppContext.Provider value={defaultValue}>
+        <h1>Venue Events</h1>
         {loading || !response ? <Loader /> : <EventView events={response} />}
       </AppContext.Provider>
     </div>

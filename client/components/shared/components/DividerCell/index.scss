@@ -1,7 +1,7 @@
 .divider-cell {
   &::after {
     content: '';
-    border-bottom: #dadce0 1px solid;
+    border-bottom: #dadce0 1px dotted;
     position: absolute;
     width: 100%;
     margin-top: -1px;

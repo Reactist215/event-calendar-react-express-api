@@ -1,9 +1,45 @@
 .event-view {
-  display: flex;
-  width: 100%;
-  .venues {
-    position: relative;
+  max-height: 80vh;
+  overflow: auto;
+  .events-header {
+    position: sticky;
+    top: -1rem;
+    z-index: 7;
     display: flex;
-    padding-left: 0.2rem;
+    align-items: center;
+    width: fit-content;
+    padding: 1.5rem 0;
+    background-color: #000000e6;
+    .time-col__header {
+      min-width: 40px;
+      max-width: 60px;
+      margin-right: 15px;
+      position: sticky;
+      left: 0;
+      span {
+        padding: 0.5rem;
+        font-size: 0.6rem;
+        background-color: green;
+        color: white;
+        border-radius: 2.5rem;
+      }
+    }
+    .venue-cols__header {
+      display: flex;
+      .venue-col__header {
+        width: 100px;
+        text-align: center;
+        font-size: 0.8rem;
+        font-weight: 600;
+      }
+    }
+  }
+  .events-cols {
+    display: flex;
+    margin-top: 10px;
+    .venues {
+      position: relative;
+      display: flex;
+    }
   }
 }
