@@ -42,7 +42,9 @@ const useFetch = ({ base_url, config }) => {
       }).then((res) => res.json());
       setResponse(res);
     } catch (error) {
+      setError(error);
     } finally {
+      setLoading(false);
     }
   };
 

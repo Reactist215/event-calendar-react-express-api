@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import DividerCol from '../shared/components/DividerCol';
 import TimeCol from '../shared/components/TimeCol';
 import VenueCol from '../shared/components/VenueCol';
-import './index.scss';
 import { getVenueEvents } from '../../util/event';
+import './index.scss';
 
 const EventView = ({ events }) => {
   const [venueEvents, setVenueEvents] = useState([]);
