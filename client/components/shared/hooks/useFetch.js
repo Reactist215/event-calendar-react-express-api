@@ -15,7 +15,8 @@ const useFetch = ({ base_url, config }) => {
    * POST
    *
    * @param {string} url Endpoint
-   * @param {*} data Post Data
+   * @param {Object} data Post Data
+   * @param {Object} config Configuration
    */
   const post = async (url, data, config = {}) => {
     try {
@@ -39,6 +40,7 @@ const useFetch = ({ base_url, config }) => {
    * GET
    *
    * @param {string} url Endpoint
+   * @param {Object} config Configuration
    */
   const get = async (url, config = {}) => {
     try {
