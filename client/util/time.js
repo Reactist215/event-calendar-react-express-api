@@ -1,9 +1,15 @@
-export const genTimeArr = (format = '24hour') => {
+/**
+ * genTimeArr
+ * @description Generate Array of Time Strings
+ *
+ * @param {string} format Format of Time to display
+ */
+export const genTimeArr = (format = '24hr') => {
   let timeArr = [];
 
   for (let i = 0; i < 25; i++) {
     let tItem = '';
-    if (format === '24hour') {
+    if (format === '24hr') {
       if (i < 10) {
         tItem = '0' + i + ':00';
       } else {

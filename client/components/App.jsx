@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import AppContext, { defaultValue } from './shared/context/AppContext';
 import EventView from './EventView';
 import Loader from './shared/components/Loader';
 import useFetch from './shared/hooks/useFetch';
@@ -16,7 +17,9 @@ export default function App() {
 
   return (
     <div className="app-component">
-      {loading || !response ? <Loader /> : <EventView events={response} />}
+      <AppContext.Provider value={defaultValue}>
+        {loading || !response ? <Loader /> : <EventView events={response} />}
+      </AppContext.Provider>
     </div>
   );
 }

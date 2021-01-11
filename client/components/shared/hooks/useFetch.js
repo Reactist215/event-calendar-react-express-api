@@ -1,10 +1,20 @@
 import { useState } from 'react';
 
+/**
+ * useFetch
+ * @description Custom Hook For Async Fetch
+ *
+ * @param {string} base_url Base Url for Request
+ * @param {Object} config Configuration for Request
+ */
 const useFetch = ({ base_url, config }) => {
   const [loading, setLoading] = useState(false);
   const [response, setResponse] = useState(null);
   const [error, setError] = useState(error);
 
+  /**
+   * Base Configuration For Request
+   */
   const baseConfig = {
     headers: {
       'Content-Type': 'application/json',
