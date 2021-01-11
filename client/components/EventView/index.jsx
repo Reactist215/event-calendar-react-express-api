@@ -13,6 +13,7 @@ const EventView = ({ events }) => {
       return getVenueEvents(events);
     });
   }, []);
+
   return (
     <div className="event-view">
       <div className="events-header">

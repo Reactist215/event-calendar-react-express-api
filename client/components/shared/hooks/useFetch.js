@@ -52,7 +52,7 @@ const useFetch = ({ base_url, config }) => {
    * @param {string} url Endpoint
    * @param {Object} config Configuration
    */
-  const get = async (url, config = {}) => {
+  const get = async (url) => {
     try {
       setLoading(true);
       setError(null);

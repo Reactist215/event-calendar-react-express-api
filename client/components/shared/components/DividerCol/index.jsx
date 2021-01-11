@@ -6,6 +6,7 @@ import AppContext from '../../context/AppContext';
 
 const DividerCol = () => {
   const ctxVal = useContext(AppContext);
+
   const [timeArr] = useState(() => {
     return genTimeArr();
   });

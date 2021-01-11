@@ -2,20 +2,20 @@
  * genTimeArr
  * @description Generate Array of Time Strings
  *
- * @param {string} format Format of Time to display
+ * @param {string} method Method to display time
  */
-export const genTimeArr = (format = '24hr') => {
+export const genTimeArr = (method = '24hr') => {
   let timeArr = [];
 
   for (let i = 0; i < 24; i++) {
     let tItem = '';
-    if (format === '24hr') {
+    if (method === '24hr') {
       if (i < 10) {
         tItem = '0' + i + ':00';
       } else {
         tItem = i + ':00';
       }
-    } else if (format === 'am/pm') {
+    } else if (method === 'am/pm') {
       const j = i % 12;
       if (j < 10) {
         tItem = '0' + j;

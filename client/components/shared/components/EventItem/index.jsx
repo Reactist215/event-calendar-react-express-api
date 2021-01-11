@@ -15,7 +15,7 @@ const EventItem = ({ event, cellHeight }) => {
 
     setStyle(() => {
       const top = Math.floor(cellHeight * (hour + minute / 60));
-      const height = Math.floor((cellHeight * duration) / 60);
+      const height = Math.floor((cellHeight * duration) / 60) - 2;
 
       const display = duration < 31 ? 'flex' : 'block';
 
